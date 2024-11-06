@@ -42,12 +42,18 @@ class MovieSearchResultsViewController: UICollectionViewController {
         collectionView.collectionViewLayout = listLayout
         
         beginObservations()
+        configureDataSource()
     }
     
     private func configureDataSource() {
         let rowRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Movie> { (cell, indexPath, item) in
-            var configuration = UIListContentConfiguration.cell()
-            configuration.text = item.title
+            let configuration = MovieItemViewContentConfiguration(
+                id: item.id,
+                movieTitle: item.title,
+                releaseYear: item.year,
+                image: item.posterURL
+            )
+            cell.contentConfiguration = configuration
         }
         
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { (collectionView, indexPath, item) -> UICollectionViewCell? in
@@ -59,9 +65,14 @@ class MovieSearchResultsViewController: UICollectionViewController {
         stateObserver = viewModel.$state
             .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
+                
+                var snapshot = NSDiffableDataSourceSnapshot<Section, Movie>()
+                snapshot.deleteAllItems()
+                self?.dataSource.apply(snapshot)
+                
                 switch state {
                 case .idle:
-                   break
+                    break
                     
                 case .loading:
                     var config = UIContentUnavailableConfiguration.loading()
@@ -83,7 +94,11 @@ class MovieSearchResultsViewController: UICollectionViewController {
                     self?.contentUnavailableConfiguration = config
                     
                 case .loaded(let movies):
-                    print(movies)
+                    self?.contentUnavailableConfiguration = nil
+                    var snapshot = NSDiffableDataSourceSnapshot<Section, Movie>()
+                    snapshot.appendSections([.main])
+                    snapshot.appendItems(movies)
+                    self?.dataSource.apply(snapshot)
                 }
             }
     }

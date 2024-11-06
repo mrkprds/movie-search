@@ -38,7 +38,10 @@ final class MovieSearchViewModel {
         searchObserver = $searchQuery
             .debounce(for: .seconds(debounceDuration), scheduler: DispatchQueue.main)
             .sink { [weak self] searchQuery in
-                print(searchQuery)
+                
+                if self?.searchQuery.isEmpty == false && searchQuery.isEmpty {
+                    self?.state = .idle
+                }
                 
                 self?.state = .loading
                 

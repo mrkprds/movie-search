@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieItemContentView" customModule="Optimum_Coding_Assesment" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="CwC-Pa-EEJ"/>
+                <outlet property="posterImage" destination="dkm-Wj-HId" id="a9y-F0-SzB"/>
+                <outlet property="primaryLabel" destination="Bf4-bZ-AAe" id="L4s-gU-3dR"/>
+                <outlet property="secondaryLabel" destination="ISV-mq-ck9" id="aPm-Wk-KgZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-JO-uX5">
+                    <rect key="frame" x="10" y="69" width="508" height="120"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieclapper" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dkm-Wj-HId">
+                            <rect key="frame" x="0.0" y="-2" width="105.66666666666667" height="121"/>
+                            <color key="tintColor" systemColor="secondaryLabelColor"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-qv-PwN">
+                            <rect key="frame" x="117.66666666666666" y="0.0" width="390.33333333333337" height="120"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I6h-eN-x9p">
+                                    <rect key="frame" x="0.0" y="36.666666666666671" width="390.33333333333331" height="46.666666666666671"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bf4-bZ-AAe">
+                                            <rect key="frame" x="347" y="0.0" width="43.333333333333314" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISV-mq-ck9">
+                                            <rect key="frame" x="349" y="26.333333333333329" width="41.333333333333314" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ntC-JO-uX5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="52x-ih-jdt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ntC-JO-uX5" secondAttribute="trailing" constant="10" id="KRM-aK-pLo"/>
+                <constraint firstItem="dkm-Wj-HId" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="Lqd-JC-6qa"/>
+                <constraint firstItem="ntC-JO-uX5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="g9W-W3-uX2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ntC-JO-uX5" secondAttribute="bottom" constant="10" id="lp2-fa-OVD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="222.90076335877862" y="-233.45070422535213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="movieclapper" catalog="system" width="128" height="113"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
