@@ -35,8 +35,14 @@ enum URLConstants {
         }
     }
    
-    enum Parmeters: String {
+    enum Parameters: String {
         case search = "s"
+        case searchType = "type"
+        case apikey
+    }
+    
+    enum SearchTypes: String {
+        case movie, series, episode
     }
     
 }
