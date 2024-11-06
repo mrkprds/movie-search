@@ -27,6 +27,7 @@ class MainViewController: UIViewController {
             let vc = MovieSearchResultsViewController.instantiate(withViewModel: viewModel)
             let searchController = UISearchController(searchResultsController: vc)
             searchController.searchResultsUpdater = self
+            navigationItem.searchController = searchController
             
         } catch {
             let alert = UIAlertController(
