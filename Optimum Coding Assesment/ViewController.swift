@@ -7,39 +7,12 @@
 
 import UIKit
 
-struct MovieSearchResponse: Decodable {
-    let movies: [Movie]
-    
-    enum CodingKeys: String, CodingKey {
-        case movies = "Search"
-    }
-}
-
-// MARK: - Movie Model
-struct Movie: Decodable, Identifiable {
-    let id: String
-    let title: String
-    let year: String
-    let type: String
-    let posterURL: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "imdbID"
-        case title = "Title"
-        case year = "Year"
-        case type = "Type"
-        case posterURL = "Poster"
-    }
-}
-
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         Task {
             do {
