@@ -30,6 +30,8 @@ class MovieItemContentView: UIView, UIContentView {
     @IBOutlet weak var posterImage: UIImageView!
     
     var currentConfiguration: MovieItemViewContentConfiguration!
+    private var imageLoadingTask: Task<Void, Never>?
+    
     var configuration: UIContentConfiguration {
         get {
             currentConfiguration
@@ -72,6 +74,43 @@ class MovieItemContentView: UIView, UIContentView {
         primaryLabel.text = configuration.movieTitle
         secondaryLabel.text = configuration.releaseYear
         
+        updateImage(with: URL(string: configuration.image))
+        
         currentConfiguration = configuration
+    }
+    
+    private func updateImage(with url: URL?) {
+        // Cancel any existing image loading
+        imageLoadingTask?.cancel()
+        
+        // Clear current image and set placeholder
+        posterImage.image = UIImage(systemName: "popcorn")
+        
+        // If no URL, just keep placeholder
+        guard let imageURL = url else { return }
+        
+        // Start new loading task
+        imageLoadingTask = Task {
+            do {
+                let image = try await ImageLoadingService.shared.loadImage(from: imageURL)
+                
+                // Check if the view is still showing the same content
+                guard currentConfiguration?.image == imageURL.absoluteString else { return }
+                
+                // Animate the image update
+                UIView.transition(
+                    with: posterImage,
+                    duration: 0.3,
+                    options: .transitionCrossDissolve
+                ) {
+                    self.posterImage.image = image
+                    self.layoutIfNeeded()
+                }
+            } catch {
+                // Show error placeholder if loading fails
+                guard currentConfiguration?.image == imageURL.absoluteString else { return }
+                posterImage.image = UIImage(systemName: "exclamationmark.triangle")
+            }
+        }
     }
 }
