@@ -9,24 +9,26 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    private let searchController = UISearchController()
     private var viewModel: MovieSearchViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
+        
         title = "Movie Search"
-        navigationItem.searchController = searchController
         navigationController?.navigationBar.prefersLargeTitles = true
-        searchController.searchResultsUpdater = self
         
         do {
+            //Setup Dependencies
             let repository = try MovieSearchRepository()
-            viewModel = MovieSearchViewModel(repository: repository)
-        } catch {
+            let viewModel = MovieSearchViewModel(repository: repository)
+            self.viewModel = viewModel
             
+            //Setup Search Controller
+            let vc = MovieSearchResultsViewController.instantiate(withViewModel: viewModel)
+            let searchController = UISearchController(searchResultsController: vc)
+            searchController.searchResultsUpdater = self
+            
+        } catch {
             let alert = UIAlertController(
                 title: "Error",
                 message: "An error occurred on loading movie search repository",
@@ -36,7 +38,6 @@ class MainViewController: UIViewController {
             present(alert, animated: true)
         }
     }
-
 }
 
 extension MainViewController: UISearchResultsUpdating {
