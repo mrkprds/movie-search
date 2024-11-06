@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		CDA43E992CDB174000E72F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA43E7A2CDB173F00E72F3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA43E812CDB173F00E72F3C;
+			remoteInfo = "Optimum Coding Assesment";
+		};
+		CDA43EA32CDB174000E72F3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDA43E7A2CDB173F00E72F3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDA43E812CDB173F00E72F3C;
+			remoteInfo = "Optimum Coding Assesment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDA43E822CDB173F00E72F3C /* Optimum Coding Assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Optimum Coding Assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA43E982CDB174000E72F3C /* Optimum Coding AssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Optimum Coding AssesmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA43EA22CDB174000E72F3C /* Optimum Coding AssesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Optimum Coding AssesmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CDA43EAA2CDB174000E72F3C /* Exceptions for "Optimum Coding Assesment" folder in "Optimum Coding Assesment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CDA43E812CDB173F00E72F3C /* Optimum Coding Assesment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CDA43E842CDB173F00E72F3C /* Optimum Coding Assesment */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CDA43EAA2CDB174000E72F3C /* Exceptions for "Optimum Coding Assesment" folder in "Optimum Coding Assesment" target */,
+			);
+			path = "Optimum Coding Assesment";
+			sourceTree = "<group>";
+		};
+		CDA43E9B2CDB174000E72F3C /* Optimum Coding AssesmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Optimum Coding AssesmentTests";
+			sourceTree = "<group>";
+		};
+		CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Optimum Coding AssesmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDA43E7F2CDB173F00E72F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43E952CDB174000E72F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43E9F2CDB174000E72F3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDA43E792CDB173F00E72F3C = {
+			isa = PBXGroup;
+			children = (
+				CDA43E842CDB173F00E72F3C /* Optimum Coding Assesment */,
+				CDA43E9B2CDB174000E72F3C /* Optimum Coding AssesmentTests */,
+				CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */,
+				CDA43E832CDB173F00E72F3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDA43E832CDB173F00E72F3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDA43E822CDB173F00E72F3C /* Optimum Coding Assesment.app */,
+				CDA43E982CDB174000E72F3C /* Optimum Coding AssesmentTests.xctest */,
+				CDA43EA22CDB174000E72F3C /* Optimum Coding AssesmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDA43E812CDB173F00E72F3C /* Optimum Coding Assesment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA43EAB2CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding Assesment" */;
+			buildPhases = (
+				CDA43E7E2CDB173F00E72F3C /* Sources */,
+				CDA43E7F2CDB173F00E72F3C /* Frameworks */,
+				CDA43E802CDB173F00E72F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CDA43E842CDB173F00E72F3C /* Optimum Coding Assesment */,
+			);
+			name = "Optimum Coding Assesment";
+			packageProductDependencies = (
+			);
+			productName = "Optimum Coding Assesment";
+			productReference = CDA43E822CDB173F00E72F3C /* Optimum Coding Assesment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDA43E972CDB174000E72F3C /* Optimum Coding AssesmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA43EB02CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding AssesmentTests" */;
+			buildPhases = (
+				CDA43E942CDB174000E72F3C /* Sources */,
+				CDA43E952CDB174000E72F3C /* Frameworks */,
+				CDA43E962CDB174000E72F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDA43E9A2CDB174000E72F3C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDA43E9B2CDB174000E72F3C /* Optimum Coding AssesmentTests */,
+			);
+			name = "Optimum Coding AssesmentTests";
+			packageProductDependencies = (
+			);
+			productName = "Optimum Coding AssesmentTests";
+			productReference = CDA43E982CDB174000E72F3C /* Optimum Coding AssesmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDA43EA12CDB174000E72F3C /* Optimum Coding AssesmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA43EB32CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding AssesmentUITests" */;
+			buildPhases = (
+				CDA43E9E2CDB174000E72F3C /* Sources */,
+				CDA43E9F2CDB174000E72F3C /* Frameworks */,
+				CDA43EA02CDB174000E72F3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDA43EA42CDB174000E72F3C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */,
+			);
+			name = "Optimum Coding AssesmentUITests";
+			packageProductDependencies = (
+			);
+			productName = "Optimum Coding AssesmentUITests";
+			productReference = CDA43EA22CDB174000E72F3C /* Optimum Coding AssesmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDA43E7A2CDB173F00E72F3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					CDA43E812CDB173F00E72F3C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					CDA43E972CDB174000E72F3C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CDA43E812CDB173F00E72F3C;
+					};
+					CDA43EA12CDB174000E72F3C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = CDA43E812CDB173F00E72F3C;
+					};
+				};
+			};
+			buildConfigurationList = CDA43E7D2CDB173F00E72F3C /* Build configuration list for PBXProject "Optimum Coding Assesment" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDA43E792CDB173F00E72F3C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDA43E832CDB173F00E72F3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDA43E812CDB173F00E72F3C /* Optimum Coding Assesment */,
+				CDA43E972CDB174000E72F3C /* Optimum Coding AssesmentTests */,
+				CDA43EA12CDB174000E72F3C /* Optimum Coding AssesmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDA43E802CDB173F00E72F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43E962CDB174000E72F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43EA02CDB174000E72F3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDA43E7E2CDB173F00E72F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43E942CDB174000E72F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDA43E9E2CDB174000E72F3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDA43E9A2CDB174000E72F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA43E812CDB173F00E72F3C /* Optimum Coding Assesment */;
+			targetProxy = CDA43E992CDB174000E72F3C /* PBXContainerItemProxy */;
+		};
+		CDA43EA42CDB174000E72F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDA43E812CDB173F00E72F3C /* Optimum Coding Assesment */;
+			targetProxy = CDA43EA32CDB174000E72F3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDA43EAC2CDB174000E72F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Optimum Coding Assesment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-Assesment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDA43EAD2CDB174000E72F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Optimum Coding Assesment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-Assesment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CDA43EAE2CDB174000E72F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDA43EAF2CDB174000E72F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDA43EB12CDB174000E72F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-AssesmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimum Coding Assesment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Optimum Coding Assesment";
+			};
+			name = Debug;
+		};
+		CDA43EB22CDB174000E72F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-AssesmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Optimum Coding Assesment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Optimum Coding Assesment";
+			};
+			name = Release;
+		};
+		CDA43EB42CDB174000E72F3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-AssesmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Optimum Coding Assesment";
+			};
+			name = Debug;
+		};
+		CDA43EB52CDB174000E72F3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RU7S8HEUSH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prds.Optimum-Coding-AssesmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Optimum Coding Assesment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDA43E7D2CDB173F00E72F3C /* Build configuration list for PBXProject "Optimum Coding Assesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA43EAE2CDB174000E72F3C /* Debug */,
+				CDA43EAF2CDB174000E72F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA43EAB2CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding Assesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA43EAC2CDB174000E72F3C /* Debug */,
+				CDA43EAD2CDB174000E72F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA43EB02CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding AssesmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA43EB12CDB174000E72F3C /* Debug */,
+				CDA43EB22CDB174000E72F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA43EB32CDB174000E72F3C /* Build configuration list for PBXNativeTarget "Optimum Coding AssesmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA43EB42CDB174000E72F3C /* Debug */,
+				CDA43EB52CDB174000E72F3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDA43E7A2CDB173F00E72F3C /* Project object */;
+}
