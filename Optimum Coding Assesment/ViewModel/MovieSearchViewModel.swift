@@ -24,7 +24,6 @@ final class MovieSearchViewModel {
     enum ViewState {
         case idle
         case loading
-        case noResults(query: String)
         case loaded(movies: [Movie])
         case error(Error)
     }
@@ -66,12 +65,8 @@ final class MovieSearchViewModel {
         
         do {
             let result = try await repository.search(for: query)
+            state = .loaded(movies: result)
             
-            if result.isEmpty {
-                state = .noResults(query: query)
-            } else {
-                state = .loaded(movies: result)
-            }
         } catch {
             state = .error(error)
         }

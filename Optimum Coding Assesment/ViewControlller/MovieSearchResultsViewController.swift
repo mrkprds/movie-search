@@ -79,19 +79,15 @@ class MovieSearchResultsViewController: UICollectionViewController {
                     config.text = "Loading Movies..."
                     self?.contentUnavailableConfiguration = config
                     
-                case .noResults(let searchQuery):
-                    var config = UIContentUnavailableConfiguration.empty()
-                    config.image = UIImage(systemName: "magnifyingglass")
-                    config.text = "No Result"
-                    config.secondaryText = "No result found for: \(searchQuery)"
-                    self?.contentUnavailableConfiguration = config
-                    
                 case .error(let error):
-                    var config = UIContentUnavailableConfiguration.empty()
-                    config.image = UIImage(systemName: "exclamationmark.triangle")
-                    config.text = "Error"
-                    config.secondaryText = "An error had occurred during the search:\n\(String(describing: error))"
-                    self?.contentUnavailableConfiguration = config
+                    if let error = error as? MovieSearchResponse.MovieSearchError {
+                        switch error {
+                        case .invalidResponse(let message):
+                            self?.displayErrorState(message ?? "Unknown error")
+                        }
+                    } else {
+                        self?.displayErrorState(String(describing: error))
+                    }
                     
                 case .loaded(let movies):
                     self?.contentUnavailableConfiguration = nil
@@ -101,5 +97,13 @@ class MovieSearchResultsViewController: UICollectionViewController {
                     self?.dataSource.apply(snapshot)
                 }
             }
+    }
+    
+    private func displayErrorState(_ error: String) {
+        var config = UIContentUnavailableConfiguration.empty()
+        config.image = UIImage(systemName: "exclamationmark.triangle")
+        config.text = "Error"
+        config.secondaryText = "An error was encountered during the search:\n\(error)"
+        contentUnavailableConfiguration = config
     }
 }
