@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     private let searchController = UISearchController()
-    private var repository: MovieSearchRepository?
+    private var viewModel: MovieSearchViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +23,18 @@ class MainViewController: UIViewController {
         searchController.searchResultsUpdater = self
         
         do {
-            repository = try MovieSearchRepository()
+            let repository = try MovieSearchRepository()
+            viewModel = MovieSearchViewModel(repository: repository)
         } catch {
-            print(error)
-        }
             
+            let alert = UIAlertController(
+                title: "Error",
+                message: "An error occurred on loading movie search repository",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(alert, animated: true)
+        }
     }
 
 }
@@ -36,15 +43,7 @@ extension MainViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchText = searchController.searchBar.text, !searchText.isEmpty else { return }
-        Task {
-            do {
-                let result = try await repository?.search(for: searchText)
-                print(result)
-            } catch {
-                print(error)
-            }
-        }
-       
+        viewModel?.searchQuery = searchText
     }
 }
 
