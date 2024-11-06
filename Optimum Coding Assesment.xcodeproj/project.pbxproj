@@ -53,11 +53,6 @@
 			path = "Optimum Coding AssesmentTests";
 			sourceTree = "<group>";
 		};
-		CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Optimum Coding AssesmentUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +85,6 @@
 			children = (
 				CDA43E842CDB173F00E72F3C /* Optimum Coding Assesment */,
 				CDA43E9B2CDB174000E72F3C /* Optimum Coding AssesmentTests */,
-				CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */,
 				CDA43E832CDB173F00E72F3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -165,9 +159,6 @@
 			);
 			dependencies = (
 				CDA43EA42CDB174000E72F3C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CDA43EA52CDB174000E72F3C /* Optimum Coding AssesmentUITests */,
 			);
 			name = "Optimum Coding AssesmentUITests";
 			packageProductDependencies = (
